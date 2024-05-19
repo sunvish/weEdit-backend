@@ -18,6 +18,10 @@ const postSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    editorId : {
+      type : mongoose.Schema.Types.ObjectId,
+      ref : "editor"
+    }
   },
   { timestamps: true }
 );
